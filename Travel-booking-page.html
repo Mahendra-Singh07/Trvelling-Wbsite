@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour and Travels-Booking Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/jpg" href="css/image/icon-logo.jpg">
+    <link rel="stylesheet" href="css/travel-booking-page.css">
+</head>
+<body>
+    <header class="navbar">
+        <img src="css/image/devbhumi-original.png" alt="DevBhumi Horizons Logo" class="logo">
+        
+    </header>
+    <main>
+        <div class="booking-form">
+            <h2>Traveler Information</h2>
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="Enter phone number" required>
+                </div>
+                <div>
+                    <label for="destination">Destination</label><br>
+                        <!-- <input type="text" id="name" placeholder="Enter your name"> -->
+                    <select id="destination" required>
+                        <option value="">--Select package--</option>
+                        <option value="1">Kedarnath_Temple(4D/3N)</option>
+                        <option value="2">Chardham_yatra(12D/11N)</option>
+                        <option value="3">Valley of Flowers(6D/5N)</option>
+                        <option value="4">Valley of Flowers(6D/5N)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="date">Travel Date</label>
+                    <input type="date" id="date">
+                </div>
+              
+
+                <div class="form-group">
+                    <label>No. of Travelers</label>
+                    <input type="number" min="1" value="1">
+                </div>
+                <div>
+                    <label for="msg">Special Requests</label><br>
+                    <textarea id="msg" placeholder="Food preference,guide,transport..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <img src="css/image/devbhumi-original.png" alt="DevBhumi Horizons Logo" class="footer-logo">
+      
+        <p><i class="fa-solid fa-envelope"></i> devbhumi@gmail.com</p>
+        <p><i class="fa-solid fa-phone-volume"></i> +91 7982478183</p>
+        <p><i class="fa-solid fa-location-dot"></i> Village-palla, Faridabad, Haryana 121003</p>
+        <span>
+          <a href="https://www.instagram.com" class="social-media"><i class="fa-brands fa-instagram"></i></a> |
+          <a href="https://www.facebook.com" class="social-media"><i class="fa-brands fa-facebook-f"></i></a> |
+          <a href="https://www.twitter.com" class="social-media"><i class="fa-brands fa-twitter"></i></a> |
+          <a href="https://www.whatsapp.com" class="social-media"><i class="fa-brands fa-whatsapp"></i></a>
+        </span>
+        <p class="copyright">&copy 2025 DevBhumi horizons | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

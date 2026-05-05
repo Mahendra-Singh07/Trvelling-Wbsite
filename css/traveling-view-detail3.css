@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    font-family: "Georgia", serif;
+    background-color: #f7f2eb;
+    color: #444;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    background-color: #1B5E20;
+    /* position: fixed; */
+    width: 100%;
+
+    
+}
+
+.logo {
+  height: 70px;     /*Navbar ke hisaab se size adjust karna*/
+  width: auto;     /* ratio maintain rahe */
+  margin-left: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 40px;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* margin-top: 10px; */
+    padding-top: 30px;
+}
+
+.navbar ul li{
+    list-style: none;
+    /* margin-right: 60px; */
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    display:inline-block;
+    color:#FAFAFA;
+    /* font-weight:unset; */
+    padding-right: 30px;
+}
+.navbar ul li a:hover{
+   
+    color: rgb(31, 212, 43);
+    transform: scale(1.08);
+}
+.home-page{
+    background: linear-gradient(rgba(0, 0, 0, 0.195), rgba(0, 0, 0, 0.686)), url("image/VALLEY-OF-FLOWERS.jpg") center/cover no-repeat;
+    /* filter: brightness(50%); */
+    z-index: 1;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2;
+    color:#FAFAFA; 
+    padding-left: 50px;
+    padding-right: 350px;
+}
+.home-page h2{
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+.home-page p{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.home-page h3{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.home-page-link a{
+    background-color:#FF9800;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.home-page-link a:hover{
+    background-color: #ff7700;
+}
+.detail-and-booking-section{
+    display: flex;
+}
+.detail-container{
+    max-width: 900px;
+    width: 50%;
+    /* box-shadow: 2px 2px 5px red, -2px -2px 5px blue; */
+
+    box-shadow:  4px 0px rgba(0,0,0,0.1);
+    /* background-color: #aea7a7; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    padding-top: 30px;
+    padding-left: 40px;
+    margin-left: 50px;
+    padding-bottom: 30px;
+}
+
+.detail-container h2{
+    padding-bottom: 10px;
+    font-size: 27px;
+    color: #1B5E20;
+    /* color: #1b4d3e; */
+}
+.detail-container p{
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.detail-box{
+    padding-top: 13px;
+}
+.detail-box h3{
+    color: #000;
+    padding-bottom: 6px;
+    font-size: 20px;
+}
+.detail-box h3 i{
+    color: rgb(254, 3, 3);
+}
+.detail-box ul{
+    padding-left: 45px;
+}
+.detail-box ul li{
+    line-height: 1.7;
+    font-size: 17px;
+}
+.detail-box h4{
+    color: #232222;
+    padding-bottom: 8px;
+    padding-top: 7px;
+}
+
+.detail-box table th{
+    /* border: 3px solid rgb(254, 3, 3); */
+    padding-right: 40px;
+    padding-left: 30px;
+    color: #232222;
+    padding-bottom: 7px;
+    /* border-right: 3px solid rgba(20, 20, 20, 0.205); */
+}
+.detail-box tr td{
+    padding-left: 32px;
+    padding-right: 30px;
+    line-height: 1.6;
+}
+.booking-container{
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    max-height: 500px;
+    margin: 80px;
+    margin-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    position: sticky;
+    top: 40px;
+    border-top: 6px solid #FF9800;
+    border-radius: 12px;
+}
+.booking-container h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.booking-container form input{
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    /* border: 1px solid #d4a373; */
+    border: 1px solid #ff8103;
+    color: #ff8103;
+    border-radius: 8px;
+    font-size: 16px;
+}
+/* .booking-container form input:hover{
+    border: 1.4px solid #FF9800;
+} */
+.booking-container form textarea{
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    /* border: 1px solid #d4a373; */
+    border: 1px solid #ff8103;
+    border-radius: 8px;
+    font-size: 16px;
+
+}
+.submit-btn{
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    margin-left:12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    /* background: #d49d66; */
+    
+    background-image: linear-gradient(to right, #53b2fe, #065af3);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.submit-btn:hover{
+    transform: scale(1.05);
+}
+.contact-btn{
+    background: linear-gradient(135deg, #1B4D3E, #4CAF50);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+    margin-left: 13px;
+}
+.contact-btn:hover {
+    background: linear-gradient(135deg, #145A32, #45A049);
+}
+footer{
+    background-color: #1B5E20;
+    color: white;
+    text-align:center;
+    padding-bottom: 20px;
+    line-height: 1.6;
+}
+.footer-logo{
+    height: 43px;
+    /* margin-left: 43%; */
+    margin-bottom: 14px;
+    margin-top: 12px;
+}
+.social-media {
+  color: #c8b08a;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+
+.social-media:hover {
+  color: #e0a060; 
+}
+.copyright{
+    color:#bbbbbb;
+    padding-top: 15px;
+    font-size: 18px;
+}
+@media screen and (max-width: 700px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar ul {
+        gap: 20px;
+        padding-top: 30px;
+    }
+    .navbar ul li{
+        padding-left: 12px;
+        text-align: center;
+        
+    }
+    .navbar ul li a{
+        font-size: 19px;
+        padding-right: 0px;
+    }
+    .home-page{
+        height: 140%;
+        line-height: 1.6; 
+        padding-left: 5%;
+        padding-right: 1%;
+        padding-bottom: 5%;
+    }
+    .detail-and-booking-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .detail-container{
+        max-width: 900px;
+        width: 90%;
+        box-shadow:  0px 0px rgba(0,0,0,0.1);
+        padding-left: 30px;
+        margin-left: 0px;
+    
+    }
+    .detail-box table th{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .detail-box tr td{
+        padding-left: 3px;
+        padding-right: 0px;
+        line-height: 1.6;
+    }
+    .booking-container{
+        height: 550px;    
+        margin: 10%;
+        margin-top: 60px;
+        padding-left: 5%;
+        padding-right: 60px;
+        position: none; 
+    }
+    .submit-btn{
+        width: 100%;
+        padding: 12px;
+        margin-top: 2px;
+        margin-left:12px;
+        margin-bottom: 8px;
+    }
+    .contact-btn{
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 12px;
+        transition: 0.3s;
+        margin-left: 2%;
+        display: flex;
+        display: inline-block;
+        margin-bottom: 2%;
+    }
+}
